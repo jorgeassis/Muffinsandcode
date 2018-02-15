@@ -1,1 +1,736 @@
-Hello
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+    <title>Jorge Assis : Data Scientist, R Developer, Marine Ecologist</title>
+
+    
+<!-- Google Analytics -->
+ 
+<!-- Google Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc bloc-fill-screen tc-white bgc-lavender-gray l-bloc" id="bloc-0">
+	<div class="container">
+		<nav class="navbar nav-center row">
+			<div class="navbar-header">
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<p class=" main-header" id="main-header">
+					HI, I&rsquo;M JORGE ASSIS
+				</p>
+				<p class="sub-header ">
+					Data Scientist, R Developer, Marine Ecologist
+				</p>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-1 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-1">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="separator-custom-4">
+					<br>
+				</p>
+				<p class="text-center text-header">
+					SHORT FACTS ABOUT ME
+				</p>
+				<p class="text-center text-subheader">
+					myself at a glance
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+
+<!-- bloc-2 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row row-no-gutters">
+					<div class="col-sm-12">
+						<p class="text">
+							Hi, my name is Jorge Assis. I'm a 40 year old data scientist from Évora, living in Faro (Portugal).&nbsp; I'm currently a Postdoctoral researcher at the Center of Marine Sciences, where I explore the evolutionary consequences arising from climate changes (past and future) and the current drivers mediating gene flow in extant marine populations. <br><br>I use machine learning algorithms*, ecological modelling** and computational simulations*** with frameworks for Big Data to test hypotheses. <br> <br>
+						</p>
+						<blockquote>
+							<p class="text-small">
+								* &nbsp; &nbsp; &nbsp;Supervised, Unsupervised and Reinforcement Learning;<br>**&nbsp; &nbsp; Predictive and explanatory modelling with ensembling approaches; Network analysis [igraph theory];<br>*** &nbsp;Lagrangian simulations with virtual 2D and 3D spatial environments.
+							</p>
+						</blockquote>
+						<p>
+							&nbsp; <br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-3">
+				<h3 class="mg-md ">
+					<span class="fa fa-github icon-md"></span>&nbsp; CODING SKILLS
+				</h3>
+				<p class="separator-custom-1">
+					<br>
+				</p>
+				<h3 class="mg-md ">
+					<span class="fa fa-flask icon-md"></span>&nbsp; ACADEMIC SKILLS
+				</h3>
+			</div>
+			<div class="col-sm-9">
+				<p class="separator-small">
+					&nbsp;
+				</p>
+				
+					<style>
+
+.skillbar {
+
+    font-family: Lato;
+	font-weight: 400;	
+	position:relative;
+	display:block;
+	margin-bottom:5px;
+	width:100%;
+	background:#eee;
+	height:25px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:25px;
+	line-height:25px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:25px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:25px;
+	line-height:25px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+</style>
+
+<script>
+jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},2000);
+});
+</script>
+
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>R</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 95%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>SQL</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 80%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>Python</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 75%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="65%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>PHP + HTML5 + jQuery</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 65%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<br><br>
+
+<!---  --->
+
+
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>Ecological modelling</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 95%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>Climate change</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 85%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>Marine ecology</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 90%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+
+<!---  --->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #DDAB8E"><span>Population genetics</span></div>
+	<div class="skillbar-bar" style="background-color: rgb(221, 171, 142); width: 90%;"></div>
+	<div class="skill-bar-percent"></div>
+</div>
+					
+				
+			</div>
+		</div>
+		<div class="row voffset">
+				<div class="col-sm-3">
+					<h3 class="mg-md ">
+						<span class="fa fa-coffee icon-md"></span>&nbsp; LINKS TO MYSELF
+					</h3>
+				</div>
+				<div class="col-sm-9">
+					<p class="separator-custom-2">
+						&nbsp;
+					</p>
+					<blockquote>
+						<p class="text">
+							Science:&nbsp;<a class="nice-links" href="https://www.researchgate.net/profile/Jorge_Assis2" target="_blank">Researchgate</a>&nbsp;&amp;&nbsp;<a class="nice-links" href="http://orcid.org/0000-0002-6624-4820" target="_blank">Orchid</a><br>Daily readings:&nbsp;<a class="nice-links" href="https://twitter.com/theredtentacle" target="_blank">Twitter</a>&nbsp;<br>Photography:&nbsp;<a class="nice-links" href="http://500px.com/jorgeassis" target="_blank">500px</a><br>Running :&nbsp;<a class="nice-links" href="https://www.strava.com/athletes/3925287" target="_blank">Strava <br></a>Email: jorgemfa [at] gmail.com<br>
+						</p>
+					</blockquote>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+
+<!-- bloc-3 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="divider-h separator-big">
+					<span class="divider"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-3 END -->
+
+<!-- bloc-4 -->
+<div class="bloc bgc-white-smoke l-bloc full-width-bloc" id="bloc-4">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center text-header">
+					WORKING GLOBALLY
+				</p>
+				<p class="text-center text-subheader">
+					where I've worked and studied so far
+				</p>
+				<p class="separator-custom-4">
+					<br>
+				</p>
+				
+					
+					
+					
+
+					
+					
+					<div id="map" style="height: 450px; width: 100%"></div>
+    <script>
+	    
+	    function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 2,
+    center: {lat: 10, lng: 0},
+              mapTypeId: 'terrain'
+
+  });
+
+  setMarkers(map);
+}
+
+// Data for the markers consisting of a name, a LatLng and a zIndex for the
+// order in which these markers should display on top of each other.
+var beaches = [
+  ['Algarve, Portuga', 36.999229, -7.924017, 4],
+  ['Ghent, Belgium', 51.048679, 3.699372, 5],
+  ['Roscoff, France', 48.714986, -3.996286, 3],
+  ['Las Palmas, Spain', 28.120536, -15.435326, 2],
+  ['Santa Barbara, USA', 34.410063, -119.749103, 2],
+  ['Santa Cararina, Brasil', -26.919350, -48.634592, 2],
+  ['Greece', 37.425368, 21.656082, 2],
+ 
+  ['Wisconsin, USA', 44.435797, -89.048507, 1]
+];
+
+function setMarkers(map) {
+  // Adds markers to the map.
+
+  // Marker sizes are expressed as a Size of X,Y where the origin of the image
+  // (0,0) is located in the top left of the image.
+
+  // Origins, anchor positions and coordinates of the marker increase in the X
+  // direction to the right and in the Y direction down.
+  var image = {
+    url: './img/beaker-4.png',
+    // This marker is 20 pixels wide by 32 pixels high.
+    size: new google.maps.Size(24, 24),
+    // The origin for this image is (0, 0).
+    origin: new google.maps.Point(0, 0),
+    // The anchor for this image is the base of the flagpole at (0, 32).
+    anchor: new google.maps.Point(10, 10)
+  };
+  // Shapes define the clickable region of the icon. The type defines an HTML
+  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+  // The final coordinate closes the poly by connecting to the first coordinate.
+  var shape = {
+    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+    type: 'poly'
+  };
+  for (var i = 0; i < beaches.length; i++) {
+    var beach = beaches[i];
+    var marker = new google.maps.Marker({
+      position: {lat: beach[1], lng: beach[2]},
+      map: map,
+
+      title: beach[0],
+      zIndex: beach[3]
+    });
+  }
+}
+
+         </script>  
+  
+  
+			 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD71tToWwqbE5CUnZC47yEhY85SiV_8Kfk&callback=initMap"
+    async defer></script>		
+					
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-4 END -->
+
+<!-- bloc-5 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="divider-h separator-big">
+					<span class="divider"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-5 END -->
+
+<!-- bloc-6 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-6">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center text-header">
+					CURRICULUM VITAE
+				</p>
+				<p class="text-center text-subheader">
+					where I've proven my skills
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-6 END -->
+
+<!-- bloc-7 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-7">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-3">
+						<h3 class="mg-md ">
+							<span class="fa fa-graduation-cap icon-md"></span>&nbsp;EDUCATION
+						</h3>
+					</div>
+					<div class="col-sm-9">
+						<p class=" separator-small">
+							&nbsp;
+						</p>
+						<p>
+							Feb 2010 – Dec 2013
+						</p>
+						<p class="text">
+							PhD [Marine Processes and Ecosystems]<br>University of Algarve, Portugal <br>University of California, Santa Barbara, USA<br>
+						</p>
+						<p class=" separator">
+							&nbsp;
+						</p>
+						<p>
+							Sep 2000 – Jan 2006
+						</p>
+						<p class="text">
+							Bachelor with honors <br>Marine BiologyUniversity of Algarve, Portugal<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row voffset-md">
+			<div class="col-sm-3">
+				<h3 class="mg-md ">
+					<span class="fa fa-black-tie icon-md"></span>&nbsp; WORK
+				</h3>
+			</div>
+			<div class="col-sm-9">
+				<p class=" separator-small">
+					&nbsp;
+				</p>
+				<p>
+					Dec 2015 – Present
+				</p>
+				<p class="text">
+					Postdoctoral Researcher :&nbsp;Global climate changes driving genetic diversity of marine forests<br>Centre of Marine Sciences, Portugal <br>Department of Biological Sciences, University of Wisconsin, USA <br>Department of Biology, University of Ghent, Belgium<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Feb 2014 – Nov 2015
+				</p>
+				<p class="text">
+					Postdoctoral Researcher :&nbsp;Climate changes drive genetic diversity and dynamics of range edge populations<br>Centre of Marine Sciences, Portugal<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Jun 2008 – Dec 2009
+				</p>
+				<p class="text">
+					Research Assistant :&nbsp;Community based mapping of Portuguese kelp forests<br>Centre of Marine Sciences, Portugal<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Jan 2007 – Dec 2007
+				</p>
+				<p class="text">
+					Research Assistant : Restoration of Biodiversity in the Marine Park Site Arrábia-Espichel <br>Centre of Marine Sciences, Portugal<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Jun 2005 – Dec 2006
+				</p>
+				<p class="text">
+					Research Assistant : Characterization, Zonation and Management of Macaronesia Marine Protected Areas University of Las Palmas de Gran Canaria, Spain<br>
+				</p>
+			</div>
+		</div>
+		<div class="row voffset-md voffset">
+			<div class="col-sm-3">
+				<h3 class="mg-md ">
+					<span class="fa fa-pagelines icon-md"></span>&nbsp; AWARDS
+				</h3>
+			</div>
+			<div class="col-sm-9">
+				<p class=" separator-small">
+					&nbsp;
+				</p>
+				<p>
+					Dec 2016
+				</p>
+				<p class="text">
+					Highly cited research <br>Aquatic Botany<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Dec 2015
+				</p>
+				<p class="text">
+					Postdoctoral Grant (6 years) <br>Portuguese Foundation for Science and Technology<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Feb 2010
+				</p>
+				<p class="text">
+					PhD Grant (4 years) <br>Portuguese Foundation for Science and Technology<br>
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Dec 2010
+				</p>
+				<p class="text">
+					Best practice in the European Communication Strategies for “Energy and Climate Change” <br>European Comission
+				</p>
+				<p class=" separator">
+					&nbsp;
+				</p>
+				<p>
+					Jan 2010
+				</p>
+				<p class="text">
+					Biodiversity Award <br> EDP – Electricidade de Portugal, SA<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-7 END -->
+
+<!-- bloc-8 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-8">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="divider-h separator-big">
+					<span class="divider"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-8 END -->
+
+<!-- bloc-9 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-9">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center text-header">
+					TOP PUBLICATIONS
+				</p>
+				<p class="text-center text-subheader">
+					selection of the highest ranking journals
+				</p>
+				<p>
+					<br>
+				</p>
+				<blockquote>
+					<p class="text">
+						
+						<strong>Assis, J.</strong>, Araújo, M.B. & Serrão, E.A. (2017) Projected climate changes threaten ancient refugia of kelp forests in the North Atlantic. Global Change Biology.<br> <br>
+						
+						<strong>Assis, J.</strong>, Tyberghein, L., Bosh, S., Verbruggen, H., Serrão, E.A. & De Clerck, O. (2017) Bio-ORACLE v2.0: Extending marine data layers for bioclimatic modelling. Global Ecology and Biogeography.
+						
+						<br> <br>
+						
+						
+						<strong>Assis, J.</strong>, Berecibar, E., Claro, B., Alberto, F., Reed, D., Raimondi, P. &amp; Serrão, E.A. (2017) Major shifts at the range edge of marine forests: the combined effects of climate changes and limited dispersal. Scientific Reports, 7:44348. <br> <br>
+						
+
+						
+						Buonomo R., <strong>Assis J.</strong>, Fernandes F., Engelen A.H., Airoldi L. &amp; Serrão E.A. (2017) Habitat continuity and stepping-stone oceanographic distances explain population genetic connectivity of the brown alga Cystoseira amentacea. Molecular ecology, 26, 766-780.&nbsp;<br> <br>
+						
+
+						
+						
+						<strong>Assis, J.</strong>*, Boavida, J.*, Silva, I., &amp; Serrão, E.A. (2016) Overlooked habitat of a vulnerable gorgonian revealed in the Mediterranean and Eastern Atlantic by ecological niche modelling. Scientific Reports, 6:36460. <br> <br>
+						
+						
+						Araújo, R.M., <strong>Assis, J.</strong>, Aguillar, R., Airoldi, L., et al. (2016) Status, trends and drivers of kelp forests in Europe: an expert assessment. Biodiversity and Conservation, 25, 1319-1348.<br><br>
+						
+												
+						
+						<strong>Assis, J</strong>., Coelho, N.C., Lamy, L., Valero, M., Alberto, F. &amp; Serrão, E.A. (2016) Deep reefs are climatic refugia for genetic diversity of marine forests. Journal of Biogeography, 43, 833–844.&nbsp; <br> <br>
+						
+						Johansson, M.L., Alberto, F., Reed, D.C., Raimondi, P.T., Coelho, N. C., Young, M.A., Bell, <strong>Assis, J.</strong> &amp; Serrão, E.A. (2015) Seascape drivers of Macrocystis pyrifera population genetic structure in the northeast Pacific. Molecular Ecology, 24, 4866–4885.&nbsp; <br> <br>
+						
+						Neiva J., <strong>Assis, J.</strong>, Coelho, N., Fernandes, F., Pearson, G.A., &amp; Serrão E.A. (2015) Genes left behind: climate change threatens cryptic genetic diversity in the canopy-forming seaweed Bifurcaria bifurcata. PLoS ONE., 10(7):e0131530. <br> <br>
+						
+						<strong>Assis, J</strong>., Zupan, M., Nicastro, K.R., Zardi, G.I., McQuaid, C.D., &amp; Serrão, E.A. (2015) Oceanographic conditions limit the spread of a marine invader along southern African shores. PLoS ONE, 10(6), e0128124.&nbsp;<br> <br>
+						
+						Mineur, F., Arenas, F., <strong>Assis, J.</strong>, Davies, A., Engelen, A.H., Fernandes, F., Malta, E., Thibaut, T., Van Nguyen, T., Vaz-Pinto, F., Vranken, S., Serrão, E.A., &amp; De Clerck, O. (2015) European seaweeds under pressure: Consequences for communities and ecosystem functioning. Journal of Sea Research, 98, 91-108. <br> <br>
+						
+						<strong>Assis, J</strong>., Serrão E.A., Claro, B., Perrin, C., &amp; Pearson, G.A. (2014) Climate-driven range shifts explain the distribution of extant gene pools and predict future loss of unique lineages in a marine brown alga. Molecular Ecology, 23, 2797–810.&nbsp;<br> <br>
+												
+						Cavanaugh K.C., Kendall B.E., Siegel D., Reed D.C., Alberto F., &amp; <strong>Assis J</strong>. (2013) Synchrony in dynamics of giant kelp forests is driven by both local recruitment and regional environmental controls. Ecology, 94, 499–509. <br> <br>
+						
+						<strong>Assis J</strong>., Castilho Coelho N., Alberto F., Valero M., Raimondi P., Reed D., &amp; Alvares Serrão E. (2013) High and Distinct Range-Edge Genetic Diversity despite Local Bottlenecks. PLoS ONE, 8, e68646.<br>
+					</p>
+				</blockquote>
+				<p class="text-small">
+					* both authors contributed equally to the manuscript.<br>
+				</p>
+				<p>
+					<br>
+				</p>
+				<div class="text-center">
+					<a href="https://www.researchgate.net/profile/Jorge_Assis2/contributions" class="btn btn-lg button btn-tumbleweed" target="_blank"><span class="fa fa-align-justify icon-spacer"></span> Show the full list of papers </a>
+				</div>
+				<div class="row" id="more-information">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-12">
+								<p class="separator-small">
+									<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-9 END -->
+
+<!-- bloc-10 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-10">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="divider-h separator-big">
+					<span class="divider"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-10 END -->
+
+<!-- bloc-11 -->
+<div class="bloc bgc-white-smoke l-bloc" id="bloc-11">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-12">
+										<p>
+											<br>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-11 END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
+
+<!-- Footer - bloc-12 -->
+<div class="bloc bgc-light-gray l-bloc" id="bloc-12">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text">
+					© Copyright 2017 Jorge Assis. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-12 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+</body>
+</html>
